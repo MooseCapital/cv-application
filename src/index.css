@@ -2,7 +2,7 @@
  margin: 0 auto;
 padding: 0;
 box-sizing: border-box;
-font-family: Rubik, serif ;
+/* font-family: Rubik, serif ; */
 font-weight: 500;
 font-size: 18px;
 -webkit-text-size-adjust: 100%;
@@ -36,9 +36,10 @@ padding: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Rubik, serif ;
+    /* font-family: Rubik, serif ; */
 }
 
+/*
 button {
 all: unset;
 padding: 0.375em 0.75em;
@@ -61,14 +62,16 @@ color: #88c0d0;
 border:0.0625em solid rgb(76, 86, 106);
 color: inherit;
 }
+*/
 
 body {
 /* background-color: #88c0d0; */
 }
 .App {
 display: flex;
-flex-direction: column;
-
+padding: 2rem;
+align-items: center;
+justify-content: center;
 }
 
 .App.dark-mode {
