@@ -92,6 +92,7 @@ cursor: pointer;
 }
 h5 {
 font-size: 1rem ;
+margin-bottom: 0.5rem;
 }
 .school-side, .info-side, .exp-side {
 display: flex;
@@ -133,7 +134,10 @@ grid-template-rows: 1fr auto;
 
 
 }
+.title-bar, .window, button, input, label, option, select, table, textarea, ul.tree-view {
+font-size: 1rem;
 
+}
 
 
 
