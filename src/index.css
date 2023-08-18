@@ -81,12 +81,68 @@ color: rgb(236, 239, 244);
 
 .App.light-mode {
 color: #2e3440;
-background-color: white;
+background-color: #dfdfdf;
 }
 
 input[type="text"] {
 max-width: 10rem;
 }
+button:hover {
+cursor: pointer;
+}
+h5 {
+font-size: 1rem ;
+}
+.school-side, .info-side, .exp-side {
+display: flex;
+flex-direction: column;
+margin: .5rem;
+}
+.info-side {
+grid-column: 1;
+grid-row: 1;
+
+}
+.school-side {
+grid-column: 2;
+grid-row: 1;
+
+}
+.exp-side {
+grid-column: 3;
+grid-row: 1;
+
+
+}
+
+
+.bottom-side {
+grid-column: 1 / 4;
+grid-row: 2/3;
+display: flex;
+flex-direction: row;
+margin: 0.5rem;
+max-width: 100%;
+justify-content: center;
+}
+
+.window-body {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr auto;
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

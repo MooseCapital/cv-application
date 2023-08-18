@@ -4,12 +4,12 @@ import ReactDOM from 'react-dom/client'
 function Home(props) {
 
     const [formData, setFormData] = useState({
-        firstName: "",
-        lastName: "",
+        name: "",
         email: "",
         phone: "",
         schoolName: "",
         schoolStudy: "",
+        employerName: "",
 
     })
 
@@ -25,7 +25,7 @@ function Home(props) {
     return (
         <>
 
-            <div className="window" style={{width: "300px"}}>
+            <div className="window" style={{width: "min-content"}}>
                 <div className="title-bar">
                     <div className="title-bar-text">CV Application</div>
                     <div className="title-bar-controls">
@@ -34,11 +34,33 @@ function Home(props) {
                   <button aria-label="Close"></button>
                 </div>
               </div>
+
                 <div className="window-body">
-                    <p>There's so much room for activities!</p>
-                    <label htmlFor="firstName">first name:</label>
-                    <input type="text" id={"firstName"} placeholder={"first name"} name={"firstName"} value={formData.firstName} onChange={handleChange}/>
-                    <div>{formData.firstName}</div>
+                    <div className="info-side">
+                        <h5>Info</h5>
+                        <label htmlFor="Name">Name:</label>
+                        <input type="text" id={"Name"} placeholder={""} name={"name"} value={formData.name} onChange={handleChange}/>
+                        <label htmlFor="Email">Email:</label>
+                        <input type="text" id={"Email"} placeholder={""} name={"email"} value={formData.email} onChange={handleChange}/>
+
+
+                    </div>
+                    <div className="school-side">
+                        <h5>School</h5>
+                        <label htmlFor="schoolName">School Name:</label>
+                        <input type="text" id={"text"} placeholder={""} name={"schoolName"} value={formData.schoolName} onChange={handleChange}/>
+
+                    </div>
+                    <div className="exp-side">
+                        <h5>Experience</h5>
+                        <label htmlFor="employerName">Employer:</label>
+                        <input type="text" id={"employerName"} placeholder={""} name={"employerName"} value={formData.employerName} onChange={handleChange}/>
+                    </div>
+                    <div className="bottom-side">
+                        <button>Edit</button>
+                        <button >Submit</button>
+
+                    </div>
 
 
               </div>
